@@ -24,7 +24,10 @@ gun开源项目 地址如下
 
 [R windows.exe](https://cloud.r-project.org/bin/windows/base/R-4.4.2-win.exe)
 
-不确定是否为集成环境,初次使用使用的工具越智能可能遇到的问题较少 毕竟只是简单使用 不涉及一些高级的使用 可能是集成环境所屏蔽的细节 具体的后面再说
+不确定是否为集成环境,初次使用使用的工具越智能可能遇到的问题较少 毕竟只是简单使用 不涉及一些高级的使用 可能是集成环境所屏蔽的细节 具体的后面再说 
+
+使用后 比较难用 优点像刚学c语言的时候使用的一个软件 纠错纯靠眼睛
+不会智能提示
 
 集成环境
 [Rstudio](https://download1.rstudio.org/electron/windows/RStudio-2024.12.0-467.exe)
@@ -66,5 +69,40 @@ venn.diagram(
  )
 ```
 
+```
+library(VennDiagram)
+
+# 使用=赋值 取代<- 与其他语言一致 减少学习或修改成本
+set1 = c("自然语言", "人工语言")
+
+venn.diagram(
+    x = list(set1),
+    category.names = c("语言"),
+    filename = "venn.png",
+    ilcs = FALSE
+)
+```
+
+**R语言区分大小写**
+ture 与 True 不能代表TRUE
+
+**R语言支持从xlxs,cvs导入**
+后续学习 暂不使用 先手搓
+
+**帮助文档**
+
+type "?venn.diagram" in R console and type enter
+
+**查看当前可下载包**
+**查看当前可加载包**
+
+**查看当前已下载包**
+**查看当前已加载包**
+
+下载并安装
+install.packages("ggplot2")
+install.packages("ggforce")
+library(ggplot2)
+library(ggforce)
 
 
