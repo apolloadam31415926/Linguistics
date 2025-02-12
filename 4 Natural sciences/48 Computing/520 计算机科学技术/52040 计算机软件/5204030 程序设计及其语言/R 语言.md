@@ -48,20 +48,22 @@ install.packages("UpSetR")  # 安装UpSetR包
 library(VennDiagram)
 
 # 创建示例数据
-set1 <- c("A", "B", "C")
-set2 <- c("B", "C", "D")
-set3 <- c("C", "D", "E")
-
+set1 <- c("第", "初", "老", "铁", "的", "苹", "葡萄", "沙发", "马达")
+set2 <- c("第", "初", "老", "铁", "的", "从", "铁路"，"重视")
+set3 <- c("铁", "路", "重", "视") 
+# 此处的铁和路 不是从"铁路"中提取的"
+# 铁可以从"铁桶"中提取 
+set4 <- c("", "", "")
 # 绘制Venn图
 venn.diagram(
-+   x = list(set1, set2, set3),
-+   category.names = c("Set 1", "Set 2", "Set 3"),
-+   filename = "venn.png",
-+   # 不显示元素为0的区域
-+   # (VennDiagram包默认行为，无需额外设置)
-+   # 可以通过ilcs参数控制是否显示交集区域的标签
-+   ilcs = FALSE
-+ )
+   x = list(set1, set2, set3),
+   category.names = c("语素", "语符", "自由语符","不自由语符"),
+   filename = "venn.png",
+   # 不显示元素为0的区域
+   # (VennDiagram包默认行为，无需额外设置)
+   # 可以通过ilcs参数控制是否显示交集区域的标签
+   ilcs = FALSE
+ )
 ```
 
 
