@@ -106,3 +106,14 @@ library(ggplot2)
 library(ggforce)
 
 
+# 使用 vs code 中的扩展调试 （失败 不是一键安装 依赖其他软件）
+https://marketplace.visualstudio.com/items?itemName=reditorsupport.r
+
+安装
+install.packages("languageserver")
+install.packages("vscDebugger", repos = "https://manuelhentschel.r-universe.dev")
+
+# 安装Rtools
+确认版本
+> R.version.string
+[1] "R version 4.4.2 (2024-10-31 ucrt)
