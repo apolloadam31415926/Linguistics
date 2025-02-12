@@ -19,8 +19,8 @@ venn.diagram(
     ilcs = FALSE,
     # output = FALSE,
     # ind = TURE
-    
-       cex = 1.2,
-  cat.col = c("darkred", "darkgreen"),
-  cat.cex = 1.5
+
+    cex = 1.2,
+    cat.col = c("darkred", "darkgreen"),
+    cat.cex = 1.5
 )
