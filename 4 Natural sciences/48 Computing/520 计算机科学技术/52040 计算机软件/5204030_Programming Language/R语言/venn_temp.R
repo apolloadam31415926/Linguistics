@@ -8,7 +8,7 @@ set3 <- c("C", "D", "E", "F")
 venn.plot <- venn.diagram(
     # list() 是创造列表的函数 # nolint
     x = list(set1, set2, set3),
-    # filename = "venn.png",
+    # filename = "venn.png", # nolint: commented_code_linter.
     filename = NULL,
     category.names = c("Set 1", "Set 2", "Set 3"),
     
