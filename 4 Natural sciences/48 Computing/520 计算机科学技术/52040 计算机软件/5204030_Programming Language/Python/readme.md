@@ -16,3 +16,4 @@ pip install matplotlib_venn <!--支持3集合-->
 ## 使用python 绘制venn图
 
 集合不为0 的部分显示元素 为0的部分显示0
+存在中文显示问题
