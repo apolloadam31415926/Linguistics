@@ -146,4 +146,19 @@ install.packages("vscDebugger", repos = "<https://manuelhentschel.r-universe.dev
 
 ## 关于vs code R语言支持插件
 
-注释缩进格式问题
+暂时关闭插件
+
+注释缩需要删除的问题问题
+
+需要学习插件相关知识 vscode 默认不提供插件配置
+
+插件的数据在
+[local_url](D:\Users\xdx\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\r)
+
+这些配置如何修改??
+
+在linux下似乎更方便运行
+
+## 关于R Markdown 
+
+似乎是R代码 直接嵌入到Markdown 文本中 无需将图片导出再使用
